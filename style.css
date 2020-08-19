@@ -1,0 +1,306 @@
+/* start basic colors*/
+/* end of basic colors*/
+/* start od basic styles*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../images/bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+/* end of basic styles*/
+.storage-container {
+  width: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.storage-container .logo-section {
+  width: 100%;
+  height: 150px;
+  background-color: #1d2c67;
+  border-radius: 10px 80px 10px 10px;
+  padding: 30px 0 30px 13%;
+  margin-bottom: 10px;
+}
+
+.storage-container .logo-section .logo {
+  display: block;
+  width: 100px;
+}
+
+.storage-container .logo-section div {
+  width: 40px;
+  height: 40px;
+  background-color: #0c122c;
+  float: left;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.storage-container .logo-section div img {
+  width: 20px;
+}
+
+.data-storage-conatiner {
+  width: 100%;
+  height: 150px;
+  background-color: #1d2c67;
+  border-radius: 10px;
+  padding: 7% 0;
+}
+
+.data-storage-conatiner .line {
+  width: 80%;
+  margin: auto;
+  height: 15px;
+  background-color: #0c122c;
+  border-radius: 100px;
+  padding: 3px 1px 1px 1px;
+}
+
+.data-storage-conatiner .line .gradient {
+  height: 95%;
+  width: 80%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2px;
+}
+
+.data-storage-conatiner .line .gradient .circle {
+  width: 7px;
+  height: 7px;
+  background-color: #dddbff;
+  border-radius: 100%;
+  margin-bottom: 0.1px;
+}
+
+.data-storage-conatiner .data-consumed {
+  width: 90%;
+  margin: 10px auto;
+  color: #dddbff;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.data-storage-conatiner .data-consumed span {
+  font-weight: 700;
+}
+
+.data-storage-conatiner .start {
+  font-weight: 700;
+  color: #dddbff;
+  float: left;
+  padding-left: 5%;
+  margin: 0;
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.data-storage-conatiner .start span {
+  font-size: 8px;
+}
+
+.data-storage-conatiner .end {
+  font-weight: 700;
+  color: #dddbff;
+  float: right;
+  padding-right: 5%;
+  margin: 0;
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.data-storage-conatiner .end span {
+  font-size: 8px;
+}
+
+.toolTip {
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.toolTip .data-left {
+  margin: 5% 0;
+}
+
+.toolTip .data-left .number {
+  font-weight: 700;
+  font-size: 25px;
+  padding: 0 4px;
+}
+
+.toolTip .data-left .text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #848794;
+  padding-right: 0 4px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-image: none;
+    background-color: #0c122c;
+  }
+  .background {
+    position: absolute;
+    background-image: url(../images/bg-desktop.png);
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    top: 50vh;
+    z-index: -1;
+  }
+  .storage-container {
+    width: 700px;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .storage-container .logo-section {
+    width: 35%;
+    height: 100%;
+    padding: 30px 0 30px 5%;
+    margin-bottom: 0;
+  }
+  .data-storage-conatiner {
+    width: 62%;
+    height: 80%;
+    padding: 3% 0;
+  }
+  .data-storage-conatiner .line {
+    width: 90%;
+    padding: 0.5%;
+  }
+  .data-storage-conatiner .line .gradient {
+    height: 100%;
+  }
+  .data-storage-conatiner .data-consumed {
+    font-size: 10px;
+    text-align: start;
+  }
+  .toolTip {
+    top: 0;
+    left: 78%;
+    width: 130px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px 10px 0 10px;
+  }
+  .toolTip .data-left {
+    margin: 9% 0;
+  }
+  .toolTip .data-left .number {
+    font-size: 23px;
+  }
+  .toolTip .data-left .text {
+    font-size: 10px;
+  }
+  .toolTip::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 88%;
+    margin-left: -4px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white white transparent transparent;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .storage-container {
+    width: 800px;
+  }
+  .toolTip {
+    left: 78%;
+    width: 150px;
+  }
+  .toolTip .data-left {
+    margin: 7% 0;
+  }
+  .toolTip .data-left .number {
+    font-size: 25px;
+  }
+  .toolTip::after {
+    left: 90%;
+    margin-left: -5px;
+    border-width: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
